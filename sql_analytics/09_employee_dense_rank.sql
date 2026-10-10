@@ -11,8 +11,8 @@ SELECT
     DENSE_RANK() OVER (
         PARTITION BY e.department_id
         ORDER BY e.salary DESC
-    ) AS dense_rank
+    ) AS dense_ranks
 FROM employees e
 JOIN departments d
     ON e.department_id = d.department_id
-ORDER BY d.department_name, dense_rank;
+ORDER BY d.department_name, dense_ranks;
