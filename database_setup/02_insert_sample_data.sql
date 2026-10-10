@@ -67,14 +67,3 @@ VALUES (110, 'Nisha', 'Marketing Executive', 38000, 50, NULL, DATE '2024-09-10')
 -- Step 4: Save the inserted records
 COMMIT;
 
---verify the data --
-
-SELECT COUNT(*) AS total_departments
-FROM departments;
-
-SELECT COUNT(*) AS total_employees
-FROM employees;
-
-SELECT *
-FROM employees
-ORDER BY employee_id;
